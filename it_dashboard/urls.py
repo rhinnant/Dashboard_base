@@ -22,6 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('tickets/', include('tickets.urls')),
     path('', views.home, name='home'),
+    path('users/', include('users.urls')),  # <-- new app routes
 ]
 
 

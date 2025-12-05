@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'dashboard',
     'dashboardpage',
     'tickets',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -78,14 +79,13 @@ WSGI_APPLICATION = 'it_dashboard.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'it_dashboard',
+        'NAME': 'my_it_dashboard',
         'USER': 'hinn',
         'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
